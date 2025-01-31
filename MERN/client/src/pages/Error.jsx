@@ -17,8 +17,14 @@ const Error = () => {
 
     return (
         <Wrapper>
-            <img src={img} alt='not found' />
-            <Link to='/' className='btn'>back home</Link>        
+            <div>
+                <h3>something went wrong</h3>
+            </div>
+            <div>
+                <span>
+                    <Link to='/' className='btn'>back home</Link>
+                </span>
+            </div>
         </Wrapper>
     )};
 
