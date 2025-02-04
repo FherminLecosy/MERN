@@ -1,4 +1,4 @@
-import { Outlet, redirect, useAsyncError, useLoaderData } from 'react-router-dom';
+import { Outlet, redirect, useLoaderData } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Dashboard';
 import SmallSidebar from '../components/SmallSidebar';
 import BigSidebar from '../components/BigSidebar';
@@ -42,7 +42,7 @@ const DashboardLayout = ({isDarkThemeEnabled}) => {
     navigate('/');
     await customFetch.get('/auth/logout');
     toast.success('Logout successful');
-    
+
   };
 
     return (
